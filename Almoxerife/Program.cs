@@ -10,6 +10,9 @@ namespace Almoxerife
     {
         static void Main(string[] args)
         {
+            Material produto = new Material();
+            produto.CadastraMaterial();
+            
         }
     }
 }
