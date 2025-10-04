@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lab3139\\Desktop\\projeto almoxarife\\Almoxerife\\",
+  "WorkspaceRootPath": "C:\\Users\\lab3140\\Desktop\\projeto-almoxarife\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{988E4777-92C3-4900-B294-D01349407CA3}|Almoxerife\\Almoxerife.csproj|c:\\users\\lab3139\\desktop\\projeto almoxarife\\almoxerife\\almoxerife\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{988E4777-92C3-4900-B294-D01349407CA3}|Almoxerife\\Almoxerife.csproj|c:\\users\\lab3140\\desktop\\projeto-almoxarife\\almoxerife\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{988E4777-92C3-4900-B294-D01349407CA3}|Almoxerife\\Almoxerife.csproj|solutionrelative:almoxerife\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{988E4777-92C3-4900-B294-D01349407CA3}|Almoxerife\\Almoxerife.csproj|c:\\users\\lab3140\\desktop\\projeto-almoxarife\\almoxerife\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{988E4777-92C3-4900-B294-D01349407CA3}|Almoxerife\\Almoxerife.csproj|solutionrelative:almoxerife\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{988E4777-92C3-4900-B294-D01349407CA3}|Almoxerife\\Almoxerife.csproj|c:\\users\\lab3140\\desktop\\projeto-almoxarife\\almoxerife\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{988E4777-92C3-4900-B294-D01349407CA3}|Almoxerife\\Almoxerife.csproj|solutionrelative:almoxerife\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{988E4777-92C3-4900-B294-D01349407CA3}|Almoxerife\\Almoxerife.csproj|c:\\users\\lab3140\\desktop\\projeto-almoxarife\\almoxerife\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{988E4777-92C3-4900-B294-D01349407CA3}|Almoxerife\\Almoxerife.csproj|solutionrelative:almoxerife\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pessoa.cs",
+              "DocumentMoniker": "C:\\Users\\lab3140\\Desktop\\projeto-almoxarife\\Almoxerife\\Pessoa.cs",
+              "RelativeDocumentMoniker": "Almoxerife\\Pessoa.cs",
+              "ToolTip": "C:\\Users\\lab3140\\Desktop\\projeto-almoxarife\\Almoxerife\\Pessoa.cs",
+              "RelativeToolTip": "Almoxerife\\Pessoa.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:06:44.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Fornecedor.cs",
+              "DocumentMoniker": "C:\\Users\\lab3140\\Desktop\\projeto-almoxarife\\Almoxerife\\Fornecedor.cs",
+              "RelativeDocumentMoniker": "Almoxerife\\Fornecedor.cs",
+              "ToolTip": "C:\\Users\\lab3140\\Desktop\\projeto-almoxarife\\Almoxerife\\Fornecedor.cs",
+              "RelativeToolTip": "Almoxerife\\Fornecedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:10:54.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Funcionario.cs",
+              "DocumentMoniker": "C:\\Users\\lab3140\\Desktop\\projeto-almoxarife\\Almoxerife\\Funcionario.cs",
+              "RelativeDocumentMoniker": "Almoxerife\\Funcionario.cs",
+              "ToolTip": "C:\\Users\\lab3140\\Desktop\\projeto-almoxarife\\Almoxerife\\Funcionario.cs*",
+              "RelativeToolTip": "Almoxerife\\Funcionario.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAB8AAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:09:00.792Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lab3139\\Desktop\\projeto almoxarife\\Almoxerife\\Almoxerife\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab3140\\Desktop\\projeto-almoxarife\\Almoxerife\\Program.cs",
               "RelativeDocumentMoniker": "Almoxerife\\Program.cs",
-              "ToolTip": "C:\\Users\\lab3139\\Desktop\\projeto almoxarife\\Almoxerife\\Almoxerife\\Program.cs",
-              "RelativeToolTip": "Almoxerife\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\lab3140\\Desktop\\projeto-almoxarife\\Almoxerife\\Program.cs*",
+              "RelativeToolTip": "Almoxerife\\Program.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T11:30:47.239Z",
               "EditorCaption": ""

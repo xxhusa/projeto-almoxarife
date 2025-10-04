@@ -10,6 +10,9 @@ namespace Almoxerife
     {
         static void Main(string[] args)
         {
+        Pessoa pessoa = new Pessoa();
+        Funcionario funcionario = new Funcionario();
+            funcionario.CadastroFunc();
         }
     }
 }
