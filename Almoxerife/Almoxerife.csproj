@@ -43,14 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
+ 
     <Compile Include="Fornecedor.cs" />
     <Compile Include="Funcionario.cs" />
     <Compile Include="Pessoa.cs" />
-=======
     <Compile Include="Estoque.cs" />
     <Compile Include="Material.cs" />
->>>>>>> ceedd090b69ba52bf0bc71d947b5f5b732d2dbe8
+
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
