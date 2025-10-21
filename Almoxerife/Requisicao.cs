@@ -8,5 +8,11 @@ namespace Almoxerife
 {
     internal class Requisicao
     {
+        public Funcionario matricula;
+        public Funcionario departamento;
+        public Material material;
+        public Estoque quantidade;
+        public DateTime dataSaida;
+        public Material tipodoproduto;
     }
 }

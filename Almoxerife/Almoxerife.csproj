@@ -43,15 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
- 
+    <Compile Include="Devolucao.cs" />
     <Compile Include="Fornecedor.cs" />
     <Compile Include="Funcionario.cs" />
+    <Compile Include="NotaFiscal.cs" />
     <Compile Include="Pessoa.cs" />
     <Compile Include="Estoque.cs" />
     <Compile Include="Material.cs" />
-
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requisicao.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
