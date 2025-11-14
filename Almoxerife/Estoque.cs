@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace Almoxerife
 {
-    internal class Estoque
+    class Estoque
     {
-        public int quantidade;
-        public int quantidadeMin;
-        public int empenho;
-       
+        public int CodigoMaterial;     
+        public string Descricao;       
+        public int Quantidade;         
+        public int Empenhado;          
+
+        public int Disponivel
+        {
+            get { return Quantidade - Empenhado; }
+        }
     }
+
 }
+

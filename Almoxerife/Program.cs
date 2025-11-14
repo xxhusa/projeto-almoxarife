@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+using System.Security.Cryptography;
+
 
 namespace Almoxerife
 {
@@ -11,13 +14,14 @@ namespace Almoxerife
         static void Main(string[] args)
         {
 
-        Pessoa pessoa = new Pessoa();
-        Funcionario funcionario = new Funcionario();
-            funcionario.CadastroFunc();
+           
 
-            Material produto = new Material();
-            produto.CadastraMaterial();
-            
+            Menu menu = new Menu();
+            menu.ExibirMenuPrincipal();
+
+
+
+
 
         }
     }

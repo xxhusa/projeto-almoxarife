@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Almoxerife
 {
-    internal class Devolucao
+    class Devolucao
     {
+        public int NumeroRequisicao;
+        public Funcionario Funcionario;    
+        public Material Material;            
+        public int Quantidade;               
+        public DateTime DataDevolucao;
     }
 }
