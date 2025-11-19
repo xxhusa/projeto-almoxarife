@@ -99,6 +99,8 @@
     <Compile Include="Funcionario.cs" />
     <Compile Include="FuncionarioDAO.cs" />
     <Compile Include="ItemNF.cs" />
+    <Compile Include="ListarNotasMenu.cs" />
+    <Compile Include="MaterialDAO.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="MenuCadastro.cs" />
     <Compile Include="MenuFornecedor.cs" />

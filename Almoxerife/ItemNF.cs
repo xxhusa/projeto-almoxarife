@@ -10,5 +10,6 @@ namespace Almoxerife
     {
         public Material Material;
         public int Quantidade;
+        public DateTime DataEntrada;
     }
 }

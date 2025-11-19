@@ -11,13 +11,15 @@ namespace Almoxerife
 {
     class Material
     {
+        public int Id;
         public int Codigo;
         public string Descricao;
         public string Categoria;
         public string Marca;
         public string Modelo;
+        
         public DateTime? Validade { get; set; }
-        public string TipoProduto;
+        public int TipoProduto;
 
 
 

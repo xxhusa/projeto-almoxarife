@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace Almoxerife
 {
-     class NotaFiscal
+    class NotaFiscal
     {
+        public int Id;
         public int NumeroNF;
         public DateTime DataEntrada;
         public Fornecedor fornecedor;
         public List<ItemNF> Itens = new List<ItemNF>();
-    
+
         public void RegistrarNota()
         {
             Console.WriteLine("Número da Nota Fiscal:");
@@ -28,23 +29,27 @@ namespace Almoxerife
             FornecedorDAO fdao = new FornecedorDAO();
             fornecedor = fdao.BuscarPorId(idFornecedor);
 
-            bool adicionarMais = true;
             MaterialDAO mdao = new MaterialDAO();
+            NotaFiscalDAO nfdao = new NotaFiscalDAO();
+
+            nfdao.Inserir(this);
+
+            bool adicionarMais = true;
+            
 
             while (adicionarMais)
-    {
+            {
                 Console.WriteLine("\n--- Cadastro de Item da Nota ---");
 
                 Console.WriteLine("Código do Material (numérico):");
                 int codigoMaterial = int.Parse(Console.ReadLine());
 
-                // Verifica se o material já existe
+                
                 Material material = mdao.BuscarPorCodigo(codigoMaterial);
 
                 if (material == null)
                 {
-                    Console.WriteLine("Material não encontrado. Cadastrando novo material.");
-
+                    
                     material = new Material();
                     material.Codigo = codigoMaterial;
 
@@ -63,35 +68,36 @@ namespace Almoxerife
                     Console.WriteLine("Validade (Enter se não tiver):");
                     string dataVal = Console.ReadLine();
                     if (string.IsNullOrWhiteSpace(dataVal))
-                    {
-                        material.Validade = DateTime.MinValue; // indica "sem validade"
-                    }
+                        material.Validade = null;
                     else
-                    {
                         material.Validade = DateTime.Parse(dataVal);
-                    }
 
-                    Console.WriteLine("Tipo do Produto (Consumível / Devolvível):");
-                    material.TipoProduto = Console.ReadLine();
+                    Console.WriteLine("Tipo do Produto (1 - Consumível / 2 - Retornável):");
+                    material.TipoProduto = int.Parse(Console.ReadLine());
 
-                    
-                    mdao.Inserir(material);
+                    mdao.Inserir(material); 
                 }
+
+                Console.WriteLine("Quantidade Recebida:");
+                int quantidade = int.Parse(Console.ReadLine());
+
+                
                 ItemNF item = new ItemNF();
                 item.Material = material;
-                Console.WriteLine("Quantidade Recebida:");
-                item.Quantidade = int.Parse(Console.ReadLine());
 
                 Itens.Add(item);
+
+                
+                mdao.AtualizarEstoque(material.Codigo, material.Descricao, item.Quantidade);
+
+                nfdao.InserirItemNF(this.Id, material.Codigo, material.Descricao, quantidade,DataEntrada);
 
                 Console.WriteLine("Adicionar mais itens? (s/n)");
                 adicionarMais = Console.ReadLine().ToLower() == "s";
             }
 
-            NotaFiscalDAO nfdao = new NotaFiscalDAO();
-            nfdao.Inserir(this);
 
-            Console.WriteLine("\n Nota cadastrada com sucesso!");
-}
+            Console.WriteLine("\nNota cadastrada com sucesso!");
+        }
     }
 }

@@ -19,9 +19,10 @@ namespace Almoxerife
                 Console.WriteLine("1 - Cadastros de Funcionario");
                 Console.WriteLine("2 - Cadastros de Fornecedor");
                 Console.WriteLine("3 - Entradas (Notas Fiscais)");
-                Console.WriteLine("4 - Requisições");
-                Console.WriteLine("5 - Devoluções");
-                Console.WriteLine("6 - Estoque");
+                Console.WriteLine("4 - Listar Notas Fiscais");
+                Console.WriteLine("5 - Requisições");
+                Console.WriteLine("6 - Devoluções");
+                Console.WriteLine("7 - Estoque");
                 Console.WriteLine("0 - Sair");
                 Console.Write("Selecione uma opção: ");
 
@@ -42,14 +43,21 @@ namespace Almoxerife
                         nf.RegistrarNota();
                         break;
                     case 4:
-                        Console.WriteLine("Menu de Requisições...");
+
+                        Console.WriteLine("Listar Notas Fiscais");
+                        ListarNotasMenu.ListarNotas();
+
                         Console.ReadKey();
                         break;
                     case 5:
-                        Console.WriteLine("Menu de Devoluções...");
+                        Console.WriteLine("Menu de Requisições...");
                         Console.ReadKey();
                         break;
                     case 6:
+                        Console.WriteLine("Menu de Devoluções...");
+                        Console.ReadKey();
+                        break;
+                    case 7:
                         Console.WriteLine("Menu de Estoque...");
                         Console.ReadKey();
                         break;
