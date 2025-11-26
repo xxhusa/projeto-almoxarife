@@ -8,6 +8,7 @@ namespace Almoxerife
 {
      public class Funcionario
     {
+        public int Id;
         public string Nome;
         public string CPF;
         public int Matricula;

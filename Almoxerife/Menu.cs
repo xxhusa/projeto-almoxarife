@@ -51,6 +51,8 @@ namespace Almoxerife
                         break;
                     case 5:
                         Console.WriteLine("Menu de Requisições...");
+                        MenuRequisicao menuRequisicao = new MenuRequisicao();   
+                        menuRequisicao.Exibir();
                         Console.ReadKey();
                         break;
                     case 6:

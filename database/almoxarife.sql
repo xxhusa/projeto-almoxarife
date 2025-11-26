@@ -134,4 +134,4 @@ SELECT
     e.QuantidadeEmpenhada AS QuantidadeEmpenhada,
     (e.QuantidadeEstoque - e.QuantidadeEmpenhada) AS QuantidadeDisponivel
 FROM estoque e
-JOIN material m ON m.Id = e.MaterialId;
+JOIN material m ON m.Codigo = e.MaterialCodigo;

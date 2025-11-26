@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Almoxerife
 {
-    class Material
+    public class Material
     {
         public int Id;
         public int Codigo;

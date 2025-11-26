@@ -31,10 +31,11 @@ namespace Almoxerife
                 {
                     cmd.Parameters.AddWithValue("@NumeroRequisicao", r.NumeroRequisicao);
                     cmd.Parameters.AddWithValue("@DataSaida", r.DataSaida);
-                    cmd.Parameters.AddWithValue("@FuncionarioId", r.FuncionarioId);
+                    cmd.Parameters.AddWithValue("@FuncionarioId", r.Funcionario.Id);
 
                     int linhas = cmd.ExecuteNonQuery();
                     Console.WriteLine($"{linhas} requisição(ões) cadastrada(s).");
+
                 }
             }
             catch (Exception erro)
@@ -151,7 +152,7 @@ namespace Almoxerife
                 if (conn == null)
                 {
                     Console.WriteLine("!ERRO: NÃO FOI POSSIVEL SE CONECTAR!");
-                    return null;
+                    
                 }
 
                 string sql = "SELECT * FROM requisicao WHERE NumeroRequisicao = @num";
@@ -167,7 +168,7 @@ namespace Almoxerife
                             Requisicao r = new Requisicao();
                             r.Id = Convert.ToInt32(reader["Id"]);
                             r.NumeroRequisicao = Convert.ToInt32(reader["NumeroRequisicao"]);
-                            r.FuncionarioId = Convert.ToInt32(reader["FuncionarioId"]);
+                            r.Funcionario.Id = Convert.ToInt32(reader["FuncionarioId"]);
                             r.DataSaida = Convert.ToDateTime(reader["DataSaida"]);
 
                             return r;
