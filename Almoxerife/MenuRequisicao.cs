@@ -58,6 +58,19 @@ namespace Almoxerife
 
                     case "2":
 
+                        Requisicao r1 = new Requisicao();
+                        r1.Funcionario = new Funcionario();
+                        FuncionarioDAO fda2 = new FuncionarioDAO();
+                        fda2.Mostrar();
+                        Console.WriteLine("Digite o Id do funcionario ");
+                        r1.Funcionario.Id = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Digite o Id da requisicao ");
+                        r1.Id = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Digite o numero da requisicao");
+                        r1.NumeroRequisicao = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Digite a data da requisicao");
+                        r1.DataSaida = DateTime.Parse(Console.ReadLine());
+
                         Console.WriteLine("Lista de Fornecedores Cadastrados");
 
                         dao.MostrarReq();
@@ -67,6 +80,15 @@ namespace Almoxerife
 
                     case "3":
 
+                        Requisicao r2 = new Requisicao();
+                        r2.Funcionario = new Funcionario();
+                        FuncionarioDAO fda3 = new FuncionarioDAO();
+                        fda3.Mostrar();
+                        Console.WriteLine("Digite o Id da requisicao ");
+                        r2.Funcionario.Id = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Digite o novo numero ");
+                        r2.Id = int.Parse(Console.ReadLine());
+                        
                         Console.WriteLine("Alterar Dados Cadatrais de Fornecedores:");
 
                         dao.AlterarReq();
@@ -75,6 +97,13 @@ namespace Almoxerife
                         break;
 
                     case "4":
+
+                        Requisicao r3 = new Requisicao();
+                        r3.Funcionario = new Funcionario();
+                        FuncionarioDAO fda4 = new FuncionarioDAO();
+                        fda4.Mostrar();
+                        Console.WriteLine("Digite o Id da requisicao ");
+                        r3.Funcionario.Id = int.Parse(Console.ReadLine());
 
                         Console.WriteLine("Deletar Fornecedores");
 
