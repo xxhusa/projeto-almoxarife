@@ -84,11 +84,12 @@ namespace Almoxerife
                 
                 ItemNF item = new ItemNF();
                 item.Material = material;
+                
 
                 Itens.Add(item);
 
                 
-                mdao.AtualizarEstoque(material.Codigo, material.Descricao, item.Quantidade);
+                mdao.AtualizarEstoque(material.Codigo, material.Descricao, quantidade);
 
                 nfdao.InserirItemNF(this.Id, material.Codigo, material.Descricao, quantidade,DataEntrada);
 
